@@ -1,0 +1,26 @@
+.navbar-app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0 1rem;
+  padding: 0.5rem;
+  background: var(--inchiostro);
+  border-radius: 8px;
+}
+
+.navbar-app a {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.15s;
+}
+
+.navbar-app a:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.navbar-app a:focus-visible {
+  outline-color: #fff;
+}

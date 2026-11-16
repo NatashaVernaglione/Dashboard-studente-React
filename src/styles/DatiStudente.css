@@ -1,0 +1,8 @@
+.dati-studente p {
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed var(--linea);
+}
+
+.dati-studente p:last-child {
+  border-bottom: 0;
+}

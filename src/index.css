@@ -1,0 +1,59 @@
+:root {
+  --inchiostro: #1b2b4b;
+  --carta: #e9edf3;
+  --foglio: #ffffff;
+  --linea: #d3dae6;
+  --testo: #1f2937;
+  --evidenziatore: #f2c94c;
+  --verde: #2f7d5b;
+  --focus: #2b5fd9;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--carta);
+  color: var(--testo);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  margin: 0 0 0.75rem;
+  color: var(--inchiostro);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

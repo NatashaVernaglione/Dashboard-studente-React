@@ -1,0 +1,26 @@
+.valutazioni ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.valutazioni li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--linea);
+}
+
+.valutazioni li:last-child {
+  border-bottom: 0;
+}
+
+.valutazioni li strong {
+  min-width: 2ch;
+  color: var(--inchiostro);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  text-align: right;
+}
